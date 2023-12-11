@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    height: 100%;
+    overflow: scroll;
+    background: linear-gradient(45deg, #80BD9E, #89DA59);
+    font-family: 'Caveat', cursive;
+    color: rgb(211, 211, 211);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+  
+  header{
+    width: 100%;
+  }
+
+  .navbar {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      background: linear-gradient(45deg, #95C986, #89DA59);
+      overflow: auto;
+  }
+  
+  .navbar li {
+      float: left;
+      font-size: 25px;
+  }
+  
+  .navbar li a {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      padding: 5px 30px;
+  }
+  
+  .navbar li a:hover {
+      background-color: #95D986;
+      color: #f4f4f4;
+  }
+
+  .intro_image{
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 30px;
+  }
+
+  .container1 p{
+    padding-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: black;
+    font-size: 20px;
+    line-height: 2;
+  }
+
+  .container1_img1 {
+    width: 500px;
+    height: 300px;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    margin: 30px auto;
+}
+ 
+.container1_img2 {
+  width: 200px;
+  height: 200px;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  margin: 30px auto;
+}
+
+.container1_img3 {
+  width: 350px;
+  height: 350px;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  margin: 30px auto;
+}
+
+.container1_img4 {
+  width: 600px;
+  height: 400px;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  margin: 30px auto;
+}
+
+.container1_img5 {
+  width: 300px;
+  height: 400px;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  margin: 30px auto;
+}
+
+.container1_img6 {
+  width: 300px;
+  height: 425px;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  margin: 30px auto;
+}
+
+.container2 {
+  margin-top: 80px;
+  width: 100%;
+  height: 100px;
+}
+
+.bottom_img{
+  width:80px;
+  height:80px;
+  margin: auto; 
+  background-size: cover;
+}
+
+  
+  

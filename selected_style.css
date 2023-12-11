@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    height: 100%;
+    overflow: scroll;
+    background: linear-gradient(45deg, #80BD9E, #89DA59);
+    font-family: 'Caveat', cursive;
+    color: rgb(211, 211, 211);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+  
+  header{
+    width: 100%;
+  }
+  
+  .navbar {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      background: linear-gradient(45deg, #95C986, #89DA59);
+      overflow: auto;
+      margin-bottom: 10px;
+  }
+  
+  .navbar li {
+      float: left;
+      font-size: 25px;
+  }
+  
+  .navbar li a {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      padding: 5px 30px;
+  }
+  
+  .navbar li a:hover {
+      background-color: #95D986;
+      color: #f4f4f4;
+  }
+  
+  iframe {
+    border-radius: 15px; /* 원하는 반지름 값으로 조정 가능 */
+    overflow: hidden; /* 내용이 커버하는 영역을 벗어날 때 둥근 효과 유지 */
+    margin-bottom: 30px;
+  }
+
+  .grid-container{
+    opacity: 0;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .fade-in-up {
+    animation: 1s both fadeInUp;
+  }
+  
+ 
+  .container1{
+    background-color: #FFF;
+    width: 700px;
+    height: auto;
+    padding-bottom: 20px;
+    border-radius: 15px;
+  }
+
+  .container1 p{
+    padding-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color:#000;
+    font-size: 20px;
+    font-family: 'Cafe24Oneprettynight';
+    line-height: 2;
+  }
+
+  .container2{
+    border-radius: 15px;
+    width:400px;
+    height:80px;
+    margin: 50px auto;
+    position: relative;
+    background-color: #FFF;
+  }
+
+  .container2 p{
+    color:#000;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Cafe24Oneprettynight';
+    font-size: 18px;
+  }
+
+  

@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Cafe24Oneprettynight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(45deg, #80BD9E, #89DA59);
+  font-family: 'Caveat', cursive;
+  color: rgb(211, 211, 211);
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+header{
+  width: 100%;
+}
+
+.navbar {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(45deg, #95C986, #89DA59);
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.navbar li {
+    float: left;
+    font-size: 25px;
+}
+
+.navbar li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 30px;
+}
+
+.navbar li a:hover {
+    background-color: #95D986;
+    color: #f4f4f4;
+}
+
+.intro {
+  text-align: center; 
+  margin-bottom: 50px;
+  font-size: 50px;
+  color: #FFF;
+  font-family: 'Cafe24Oneprettynight'
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px; /* Set the gap between rows */
+  column-gap: 70px; 
+}
+
+.container {
+  width: 200px;
+  height: 300px;
+  perspective: 800px;
+  position: relative;
+}
+
+.container a:hover .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.container a {
+  text-decoration: none; /* Remove underline from anchor tags */
+  color: inherit; /* Inherit text color from parent */
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1250ms;
+  transform-style: preserve-3d;
+}
+
+.card h1 {
+  color: #fff;
+  font-size: 30px;
+}
+
+.card p {
+  color: #fff;
+  font-size: 20px;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-size: cover;
+}
+
+.back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  background-size: cover;
+}
+
+.back h1 {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin:0;
+}
+
+.back p {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
